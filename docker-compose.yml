@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  kube-secrets:
+    environment:
+      COVERALLS_TOKEN: ${COVERALLS_TOKEN}
+    build:
+      context: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - ".:/go/src/kube-secrets"
+      - "./build:/go/build"
