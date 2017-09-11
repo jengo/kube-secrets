@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+type: Opaque
+metadata:
+  name: test-create-by-editor
+  namespace: default
+data:
+  test: VEVTVF9EQVRBCg==
